@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/router/:path*",
+      "destination": "http://180.93.42.228:20128/:path*"
+    },
+    {
       "source": "/(api/(?!ai/conversations(?:/|$)).*)",
       "destination": "http://180.93.42.228:12300/blocked-or-custom" 
     },
